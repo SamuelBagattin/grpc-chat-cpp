@@ -1,5 +1,6 @@
 *.pb.*
-/build
+build
+.vscode
 
 # Created by https://www.toptal.com/developers/gitignore/api/c++,cmake,windows,linux,macos,emacs,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,cmake,windows,linux,macos,emacs,vim
