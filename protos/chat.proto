@@ -1,18 +1,13 @@
 syntax = "proto3";
 
-package helloworld;
+package grpc_chat;
 
 
-service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+service MessagesService {
+  rpc Chat (stream Message) returns (stream Message) {}
 }
 
-
-message HelloRequest {
+message Message {
   string name = 1;
-}
-
-
-message HelloReply {
-  string message = 1;
+  string content = 2;
 }
